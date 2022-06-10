@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility bills</title>
+    <link rel="stylesheet" href="Homecss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tapestry&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="Main.html"><label class="logo">Wallet</label></a>
+        <ul>
+            <li class="hover"><a href="Main.html">Options</a></li>
+            <li class="hover"><a href="">Help</a></li>
+            <li class="hover"><a href="Signin.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <img src="phone-bill-iamge.jpg" alt="">
+
+            <form action="" class="form" id="paybill">
+                <label for="billtype">What bill do you want to pay?</label>
+                <select name="billtype" id="billtype">
+                    <option value="">Electricity bill</option>
+                    <option value="">Telephone bill</option>
+                </select>
+                <br><br>
+                <label for="pin">Pin:</label>
+                <br>
+                <input type="text" name="pin" id="pin" required="true">
+                <br><br>
+                <label for="amount">Amount:</label>
+                <br>
+                <input type="text" name="amount" id="amount" required="true">
+                <a href=""><button class="Register spacing">Pay amount</button></a>
+                
+                <button></button>
+            </form>
+    </section>
+    <script src="Utility.js" type="module"></script>
+</body>
+</html>

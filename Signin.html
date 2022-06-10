@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <link rel="stylesheet" href="Homecss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tapestry&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="Home.html"><label class="logo">Wallet</label></a>
+        <ul>
+            <li class="hover"><a href="Home.html">Home</a></li>
+            <li class="hover"><a href="carscart.html">Help</a></li>
+            <li class="hover"><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align: center; font-size: 1.5em;">Right time to create an account to enjoy our easy payment services!!</h1>
+    <section class="main-content">
+
+    <form action="#" class="signin" id="first">
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Username" name="username" id="username" required="true">
+        <br><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="E-mail" name="email" id="email" required="true">
+        <br><br><br>
+        <label for="bank">Select bank:</label>
+        <select name="bank" id="bank" >
+            <option value="SBI">SBI</option>
+            <option value="HDFC">HDFC</option>
+            <option value="AXIS">AXIS BANK</option>
+            <option value="IOB">IOB BANK</option>
+            <option value="IDFC">IDFC BANK</option>
+            <option value="PNB">PNB</option>        
+        </select>
+        <br><br><br>
+        <label for="account">Account Number:</label>
+        <input type="text" name="account" id="account" placeholder="Account number" required="true">
+        <br><br><br>
+        <label for="pin">PIN Number:</label>
+        <input type="text" name="pin" id="pin" placeholder="PIN" required="true" >
+        <br><br><br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Password" name="password" id="password" required="true">
+        <br><br><br>
+        
+        <a href="Home.html"><button type="submit" class="Register">Register</button></a>
+    </form>
+    </section>
+    <!-- <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+            import { getDatabase } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
+            import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyAPfs7RCIfgGj2U2YN4XEn1F_jaemg96jk",
+                authDomain: "myapp-a2c4a.firebaseapp.com",
+                databaseURL: "https://myapp-a2c4a-default-rtdb.firebaseio.com",
+                projectId: "myapp-a2c4a",
+                storageBucket: "myapp-a2c4a.appspot.com",
+                messagingSenderId: "79919463761",
+                appId: "1:79919463761:web:e6cb8395d61eaed6aba770"
+            };
+
+
+            const app = initializeApp(firebaseConfig);
+            const db = getDatabase(app);
+            const auth = getAuth();
+
+            const form = document.querySelector("#first");
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                let username = document.querySelector("#username").value;
+                let email = document.querySelector("#email").value;
+                let password = document.querySelector("#password").value;
+                
+                createUserWithEmailAndPassword(auth, email, password)
+                    .then((userCredential) => {
+                        // Signed in 
+                        const user = userCredential.user;
+                        alert("You have created your account successfully");
+                        // ...
+                    })
+                    .catch((error) => {
+                        const errorCode = error.code;
+                        const errorMessage = error.message;
+                        alert(errorMessage);
+                        // ..
+                    });
+            })
+
+    </script> -->
+
+    <script src="signup.js" type="module"></script>
+
+    
+    
+</body>
+</html>
